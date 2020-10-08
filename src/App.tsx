@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
+import CardArea from "./components/CardArea/CardArea";
 
-class App extends React.PureComponent {
-    render() {
-        return (
-            <div>
-                <h1>Hello World!</h1>
-            </div>
-        );
-    }
-}
+const App = () => {
+  return (
+    <div>
+      <CardArea />
+    </div>
+  );
+};
 
 export default App;
