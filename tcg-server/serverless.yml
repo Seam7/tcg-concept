@@ -25,6 +25,19 @@ provider:
   runtime: nodejs12.x
   region: us-west-2
 
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:PutObjectAcl
+      Resource: "arn:aws:s3:::tcg-server-12345/*"
+
+resources:
+  Resources:
+    fileBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: tcg-server-12345
 # you can overwrite defaults here
 #  stage: dev
 
@@ -60,6 +73,8 @@ provider:
 functions:
   save:
     handler: handler.save
+    environment:
+      bucket: tcg-server-12345
     events:
       - http:
           path: card/save

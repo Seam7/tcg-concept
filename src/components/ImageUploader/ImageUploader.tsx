@@ -6,14 +6,14 @@ const ImageUploader: React.FC = () => {
   const handleUpload = () => {
     const data = new FormData();
     data.append("file", value[0]);
-    data.append("name", value[0].name);
+    // data.append("name", value[0].name);
     fetch(
       "https://cqs75fut5i.execute-api.us-west-2.amazonaws.com/dev/card/save",
       {
         body: data,
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
+        // headers: {
+        //   "Content-Type": "multipart/form-data",
+        // },
         method: "POST",
       }
     );
