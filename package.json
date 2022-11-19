@@ -23,7 +23,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-latest": "^6.24.1",
     "css-loader": "^3.2.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "node-sass": "^4.14.1",
     "prettier": "2.1.2",
     "sass-loader": "^8.0.2",
@@ -33,7 +33,7 @@
     "tslint-immutable": "^6.0.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.6",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
@@ -41,6 +41,6 @@
     "@types/react-dom": "^16.8.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^5.0.1"
   }
 }
